@@ -19,7 +19,7 @@ class SearchForm extends Component {
 
     handleFilter =  (event) => {
         this.setState({type: event.target.dataset.type})
-        this.props.searchMovies(this.state.type)
+        this.props.searchMovies(this.state.search, this.state.type)
     }
 
 
